@@ -19,9 +19,9 @@ namespace CarLotSimulator
             myCar.Make = "Volkswagon";
             myCar.Model = "Corrado";
             myCar.Year = 1988;
-            myCar.EngineNoise = "Sounds like a rabbit in distress";
-            myCar.HonkNoise = "Goose Honk";
-            myCar.IsDriveable = "Slowly but surely";
+            myCar.EngineNoise = "Sounds like a rabbit in distress.";
+            myCar.HonkNoise = "Goose Honk.";
+            myCar.IsDriveable = "Slowly but surely.";
 
             lot.Cars.Add(myCar);
 
@@ -30,9 +30,9 @@ namespace CarLotSimulator
                 Make = "Ford",
                 Model = "Bronco",
                 Year = 1989,
-                EngineNoise = "The stampede of wild horses",
-                HonkNoise = "LOUD",
-                IsDriveable = "awww YYEAAAHHH",
+                EngineNoise = "The stampede of wild horses.",
+                HonkNoise = "LOUD.",
+                IsDriveable = "awww YYEAAAHHH!",
 
 
             };
@@ -43,29 +43,35 @@ namespace CarLotSimulator
                 Make = "AMC",
                 Model = "Eagle",
                 Year = 1981,
-                EngineNoise = "vroom vroom",
-                HonkNoise = "Look for hand gesture out the window",
-                IsDriveable = "Only driveable in Wisconsin",
+                EngineNoise = "vroom vroom.",
+                HonkNoise = "Look for hand gesture out the window.",
+                IsDriveable = "Only driveable in Wisconsin.",
 
             };
             lot.Cars.Add(amc);
 
-           
-            myCar.MakeEngineNoise(myCar.EngineNoise);
-            myCar.MakeHonkNoise(myCar.HonkNoise);
-            
-            Ford.MakeEngineNoise(Ford.EngineNoise);
-            Ford.MakeHonkNoise(Ford.HonkNoise);
-            
-            amc.MakeEngineNoise(amc.EngineNoise);
-            amc.MakeHonkNoise(amc.HonkNoise);
+
+            //myCar.MakeEngineNoise(myCar.EngineNoise);
+            //myCar.MakeHonkNoise(myCar.HonkNoise);
+
+            //Ford.MakeEngineNoise(Ford.EngineNoise);
+            //Ford.MakeHonkNoise(Ford.HonkNoise);
+
+            //amc.MakeEngineNoise(amc.EngineNoise);
+            //amc.MakeHonkNoise(amc.HonkNoise);
 
 
 
-            foreach(var car in lot.Cars)
-            {
-                Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model} IsDriveable: {car.IsDriveable}");
-            }
+            //foreach (var car in lot.Cars)
+            //{
+            //    Console.WriteLine($"Year: {car.Year} " +
+            //        $"Make: {car.Make}" +
+            //        $" Model: {car.Model} " +
+            //        $"EngineNoise: {car.EngineNoise} " +
+            //        $"HonkNoise: {car.HonkNoise} " +
+            //        $"IsDriveable: {car.IsDriveable}");
+            //}
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars} cars");
 
             
             
